@@ -1,2 +1,4 @@
-# django-todo-app
-A Django based ToDo application
+# Django-ToDo-App
+
+Ref: [Dennis Ivy Tutorial](https://www.youtube.com/watch?v=4RWFvXDUmjo)
+
