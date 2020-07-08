@@ -1,10 +1,8 @@
-{% include 'base.html' %} 
-
-{% block content %}
+{% include 'base.html' %} {% block content %}
 <h3>Update task</h3>
 <form method="POST" action="">
-    {% csrf_token %} 
-    {{form}}
-    <input type="submit" value="Update task">
+  {% csrf_token %} {{form}}
+  <!-- <input type="submit" value="Update task"> -->
+  <button type="submit" class="btn-create-task">Update Task</button>
 </form>
 {% endblock content %}
