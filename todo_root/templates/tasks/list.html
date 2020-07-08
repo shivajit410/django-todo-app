@@ -6,8 +6,12 @@
 </form>
 {% for task in tasks %}
 <div class="task-list">
-  <a href="{% url 'update_task' task.id %}"><span>Update</span> </a>
-  <a href="{% url 'delete_task' task.id %}"><span>Delete</span></a>
+  <a class="update-btn" href="{% url 'update_task' task.id %}"
+    ><span>Update</span>
+  </a>
+  <a class="delete-btn" href="{% url 'delete_task' task.id %}"
+    ><span>Delete</span></a
+  >
   {% if task.complete == True %}
   <strike>{{task }}</strike>
   {% else %}
